@@ -1,0 +1,38 @@
+from track_orders.models import Order
+o1 = Order(
+    title='First Order',
+    description='Description of the first order',
+    prodCode='111111',
+    custCode='1234321',
+    isFav = False,
+    image='img/o1.png'
+)
+o1.save()
+o2 = Order(
+    title='Second Order',
+    description='Description of the Second order',
+    prodCode='222222',
+    custCode='22221111',
+    isFav = False,
+    image='img/o1.png'
+)
+o2.save()
+o3 = Order(
+    title='Third Order',
+    description='Description of the Third order',
+    prodCode='33333',
+    custCode='3333111',
+    isFav = False,
+    image='img/o1.png'
+)
+o3.save()
+o4 = Order(
+    title='Fourth Order',
+    description='Description of the Fourth order',
+    prodCode='44444',
+    custCode='44441111',
+    isFav = False,
+    image='img/o1.png'
+)
+o4.save()
+
