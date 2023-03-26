@@ -11,7 +11,10 @@ Brownie points for creating a basic frontend.
 
 Inputs have been gathered from:
 https://realpython.com/get-started-with-django-1/
+
 For Adding Favourite Button
 https://www.w3schools.com/django/django_update_record.php
+
 For oAuth
 https://www.section.io/engineering-education/django-google-oauth/
+
