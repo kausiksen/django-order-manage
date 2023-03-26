@@ -1,5 +1,6 @@
 # django-order-manage
-Order management web application using Django
+Order management web application using Django :
+
 Create a Django order management app that will be used by a shopkeeper to manage their orders. In addition to the CRUD functionality and secure login options(OAuth / username & password) we would like the app to include some additional features.
 
 First, we would like the app to allow the shopkeeper to add tags to certain orders to make searching for them easier. The app should then implement a search functionality that allows the shopkeeper to search for orders by tag.
