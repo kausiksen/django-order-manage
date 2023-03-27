@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<h1>{{ order.title }}</h1>
+<div class="row">
+    <div class="col-md-8">
+        <img src="{% static order.image %}" alt="" width="100%">
+    </div>
+    <div class="col-md-4">
+        <h5>Details of the order:</h5>
+        <p>{{ order.description }}</p>
+        <br>
+        <h5>Product Code:</h5>
+        <p>{{ order.prodCode }}</p>
+        <br>
+	<h5>Customer Code:</h5>
+        <p>{{ order.custCode }}</p>
+        <br>
+        <h5>Favourite?:</h5>
+        <p>{{ order.isFav }}</p>
+        <br>
+        
+    </div>
+</div>
+{% endblock %}
+

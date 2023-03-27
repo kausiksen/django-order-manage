@@ -1,23 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-
 # Create your views here.
 from track_order.models import Order
-def order_index(request,q=""):# q is the query string
-    if q=="":#No query has been passed
-        orders=Order.objects.all()
-    else:
-        orders = Order.objects.filter(title__contains=q)
+def order_index(request):
+    orders = Order.objects.all()
     context = {
-        'orders': orders,
-    }
-    return render(request, 'order_index.html', context)
-
-def order_fav(request):# q is the query string
-    orders = Order.objects.filter(isFav=True)
-    context = {
-        'orders': orders,
+        'orders': orders
     }
     return render(request, 'order_index.html', context)
 def order_detail(request, pk):
