@@ -18,3 +18,5 @@ https://www.w3schools.com/django/django_update_record.php
 For oAuth
 https://www.section.io/engineering-education/django-google-oauth/
 
+For tagging
+https://www.geeksforgeeks.org/adding-tags-using-django-taggit-in-django-project/
