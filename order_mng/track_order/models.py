@@ -7,5 +7,5 @@ class Order(models.Model):
     prodCode = models.CharField(max_length=20)
     custCode = models.CharField(max_length=20)
     isFav = models.BooleanField()
-    image = models.FilePathField(path="/img")
+    image = models.CharField(max_length=20)
 
