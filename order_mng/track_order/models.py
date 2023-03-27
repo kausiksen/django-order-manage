@@ -1,5 +1,5 @@
 from django.db import models
-
+from taggit.managers import TaggableManager
 # Create your models here.
 class Order(models.Model):
     title = models.CharField(max_length=100)
@@ -8,4 +8,5 @@ class Order(models.Model):
     custCode = models.CharField(max_length=20)
     isFav = models.BooleanField()
     image = models.CharField(max_length=20)
+    tags = TaggableManager()
 

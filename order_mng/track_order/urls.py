@@ -5,5 +5,6 @@ urlpatterns = [
     path("favs/", views.order_fav, name="order_fav"),
     path("<int:pk>/", views.order_detail, name="order_detail"),
     path("search/<str:q>", views.order_index, name="order_search"),
+    path("searchTags/<str:q>", views.order_search_tag, name="order_search_tag"),
     path("make_fav/<int:pk>/", views.make_fav, name="make_fav"),
 ]
